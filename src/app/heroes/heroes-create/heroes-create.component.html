@@ -1,0 +1,25 @@
+<mat-card>
+    <form (submit)="onAddHero(heroForm)" #heroForm="ngForm">
+        <mat-form-field>
+            <input
+                matInput
+                name="name"
+                ngModel 
+                type="text"
+                required
+                placeholder="Hero Name" ></mat-form-field>
+        <mat-form-field>
+            <input 
+                matInput
+                name="imagePath"
+                ngModel 
+                type="text"
+                required
+                placeholder="Image Path" ></mat-form-field>
+        
+            <button 
+                mat-raised-button
+                color="primary"
+                class="btn btn-primary">Add Hero</button>
+    </form>
+</mat-card>
